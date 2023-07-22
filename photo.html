@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Home</title>
+    <link href="photo.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="comeback">
+        <ul class="mainMenu">
+            <li><a href="aboutWeb.html">Giới thiệu</a></li>
+            <li><a href="infor.html">Đăng ký</a></li>
+            <li class="dropMenu">
+                <a href="#">Dịch vụ</a>
+                <ul class="subMenu">
+                    <li><a href = "#">Sức khỏe</a></li>
+                    <li><a href = "#">Làm đẹp</a></li>
+                    <li><a href = "#">Thức ăn</a></li>
+                </ul>
+            </li>
+            <li class="dropMenu"><a href="photo.html">Photos</a>
+                <ul class="subMenu">
+                    <li ><a href="#Cat">Cat</a></li>
+                    <li><a href="#dog">Dog</a></li>
+                    <li><a href="#others">Others</a></li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Pet home</h2>
+    </nav>
+    <div>
+        <img src="upTo.png" class="buttonMode" id="backToMenu">
+    </div>
+    <div id="Cat">
+        <h3>Cat photo</h3>
+        <div>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.id0DdpxA7VPDpwf67_2W_AHaEo&pid=Api&P=0&h=180">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.Z4UUr7rXPvOvoALaQfeEnAHaFj&pid=Api&P=0&h=180">
+            <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg">
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg">
+            <img src="https://i.pinimg.com/564x/37/b6/01/37b601acf034d75c48796a77b3f6e6c8.jpg">
+            <img src="https://i.pinimg.com/564x/3f/99/e2/3f99e2879e730bb58221b05c478bbc0a.jpg">
+        </div>
+       <div>
+        <img src="https://i.pinimg.com/564x/f6/47/a9/f647a9977241ce37dfaac3a3676d8a41.jpg">
+        <img src="https://i.pinimg.com/564x/21/7d/ce/217dcefde04bfaaa59163e7d27d9beae.jpg">
+        <img src="https://i.pinimg.com/564x/0a/ba/3f/0aba3f4f57ee2840d22862cd90cb4e4d.jpg">
+       </div>
+    </div>
+    <div id="dog">
+        <h3>Dog photo</h3>
+        <div>
+            <img src="https://i.pinimg.com/564x/35/3c/4d/353c4d2a9f5fc02b96fca99e7c1d2874.jpg">
+            <img src="https://i.pinimg.com/564x/96/eb/e6/96ebe624ff678b815fefadca7ffdd17b.jpg">
+            <img src="https://i.pinimg.com/564x/8d/e6/54/8de654997be877972ed241926d8e2e75.jpg">
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/564x/23/6b/f5/236bf5691d44d60121d5d193003ef39d.jpg">
+            <img src="https://i.pinimg.com/564x/e7/83/cd/e783cd7a1e39f5ab4a6dec26be2b2acc.jpg">
+            <img src="https://i.pinimg.com/564x/17/c7/eb/17c7ebaf43691261ca97a9f08c39d846.jpg">
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/564x/37/32/89/373289d3bb15b092ecaf9fad05877b68.jpg">
+            <img src="https://i.pinimg.com/564x/bd/6c/da/bd6cda4355d9be491bf935fdbb1854b9.jpg">
+            <img src="https://i.pinimg.com/564x/05/e0/93/05e093993b71b1629c13d6a9409fde05.jpg">
+    
+        </div>
+    </div>
+    <div id="others">
+        <h3>Others</h3>
+        <div>
+            <img src="https://i.pinimg.com/564x/2b/62/5d/2b625de6f257a4199a9562e334cbf703.jpg">
+            <img src="https://i.pinimg.com/564x/56/e2/9b/56e29b83d42ce42ca3bef053e13a241b.jpg">
+            <img src="https://i.pinimg.com/564x/96/e0/dc/96e0dcaf0089aa524b9cbae7af2e2d77.jpg">
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/564x/fd/c0/6d/fdc06d044ccf8469cb9c1522d3ce680a.jpg">
+            <img src="https://i.pinimg.com/564x/16/f6/b5/16f6b59aca56ef3da83bc95ee5558842.jpg">
+            <img src="https://i.pinimg.com/564x/35/18/c3/3518c3a66c417a1f0180f71ff8e3991e.jpg">
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/564x/0f/71/10/0f7110f10ca500a4a9ae02a734b59b8c.jpg">
+            <img src="https://i.pinimg.com/564x/c5/5b/6b/c55b6befff3371240e2080dee1c135c9.jpg">
+            <img src="https://i.pinimg.com/564x/05/e0/93/05e093993b71b1629c13d6a9409fde05.jpg">
+    
+        </div>
+    </div>
+    <script>
+        // JavaScript code goes here
+        document.getElementById("backToMenu").addEventListener("click", function() {
+            document.getElementById("comeback").scrollIntoView();
+        });
+    </script>
+</body>
+</html>

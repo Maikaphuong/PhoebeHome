@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phobe Home</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap" rel="stylesheet">
+    <style>
+        h3,h5{
+            font-family: 'Victor Mono', monospace;
+  font-size: 20px; /* Adjust the font size as needed */
+            color:rgb(203, 100, 37);
+            text-align: center;
+        }
+        .warning
+        {
+            margin:auto;
+            border:1px solid white;
+            border-radius:10px;
+            margin-bottom:100px;
+            background-color: rgb(53, 10, 10,0.9);
+            color:blanchedalmond;
+        }
+        p
+        {
+            background-color: rgba(22, 39, 66, 0.8);
+            color:aliceblue;
+            margin-bottom:10px;
+            max-width: 80%;
+            padding:10px;
+            font-size:18px;
+        }
+        img[alt="Ảnh con p"]
+        {
+            margin-top:20px;
+            max-width: 80%;
+            width: auto;
+            height:auto;
+            margin-bottom:30px;
+        }
+        section
+        {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         /* Media query for phones (adjust the breakpoint as needed) */
+         @media screen and (max-width: 600px) {
+            img[alt="Ảnh con p"] {
+             max-width: 80%;
+            width: auto;
+            height:auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="comeback">
+        <ul class="mainMenu">
+            <li><a href="index.html">Giới thiệu</a>
+            </li>
+            <li class="dropMenu"><a href="#">Projects</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="website.html">Website</a></li>
+                    <li id="change1"><a href="#">C++</a></li>
+                    <li id="change1"><a href="#">Python</a></li>
+                </ul>
+            </li>
+            <li class="dropMenu"><a href="#">Khác</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="birthday.html">Birthday</a></li>
+                    <li id="change1"><a href="art.html">Arts</a></li>
+                    <li id="change1"><a href="#">Noname</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <img src="sun.png" alt="light-Mode"class="buttonMode" id="light-dark"
+    onclick="changeImage()">
+<script src="home.js"></script>
+<img src="upTo.png" class="buttonTo" id="toMenu">
+<script>
+    document.getElementById("toMenu").addEventListener("click",function()
+    {
+        document.getElementById("comeback").scrollIntoView();
+    })
+</script>
+<h3>Art lẻ ngày 23/07/2023</h3>
+<h5>Những khoảng khắc với mấy bợn của chủ Web</h5>
+<p class="warning">Cảnh báo: Chủ web không biết viết gì hay ho, ai không thích thì có thể out trang này</p>
+<section>
+    <p>
+        Đây là P và bạn zân - bét fen ngồi kế bên 3 năm cấp 3, lúc này nó cừi rất zui còn P cừi giả trân. Nhưng do P vẽ nên mọi người không biết đâu...
+    </p>
+    <img src="zanx.jpg" alt="Ảnh con p">
+    <p>
+        Đây là P và bạn mới trên đại học, tạm bịt bạn cũ chơi với bạn mới, bạn rất cutie, hay cho đồ ăn, là má của 2 con méo, mon với mè nên P hay đặt nick name "Má bé Mon".
+    </p>
+    <img src="maixx.jpg" alt="Ảnh con p">
+    <p>
+        Đây là cũng là bạn mới trên đại học (P zẽ tặng sinh nhựt cho "kiwi kiwi"), bét fen của Má bé Mon, thích méo và đi học ngày nào kiwi kiwi, nên P đặt nick name là "kiwiwi".
+    </p>
+    <img src="kiwikiwi.jpg" alt="Ảnh con p">
+    <p>
+        Đây là P và mấy fen ĐH muốn đi concert Blackpink, nhưng mà không có điều kiện, với deadline trên trường dí quá nên chụp ảnh sương sương và lấy được chữ ký 2 idol là quá toẹt zời.
+    </p>
+    <img src="blackpink.jpg" alt="Ảnh con p">
+    <p>Hết rồi nha, vẽ xong mừng rớt nước mắt ...</p>
+</section>
+</body>
+</html>

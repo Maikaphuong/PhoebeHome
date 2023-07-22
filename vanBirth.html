@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phobe Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monda:wght@700&family=Victor+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <style>
+        h3,h5{
+            font-family:'Monda','Victor Mono', monospace, Tahoma;
+            color:rgb(203, 100, 37);
+            text-align: center;
+        }
+        img[alt="Ảnh con zân"]
+        {
+            max-width: 80%;
+            width: auto;
+            height:auto;
+        }
+        section
+        {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav id="comeback">
+        <ul class="mainMenu">
+            <li><a href="index.html">Giới thiệu</a>
+            </li>
+            <li class="dropMenu"><a href="#">Projects</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="website.html">Website</a></li>
+                    <li id="change1"><a href="#">C++</a></li>
+                    <li id="change1"><a href="#">Python</a></li>
+                </ul>
+            </li>
+            <li class="dropMenu"><a href="#">Khác</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="birthday.html">Birthday</a></li>
+                    <li id="change1"><a href="art.html">Arts</a></li>
+                    <li id="change1"><a href="#">Noname</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <img src="sun.png" alt="light-Mode"class="buttonMode" id="light-dark"
+    onclick="changeImage()">
+<script src="home.js"></script>
+<img src="upTo.png" class="buttonTo" id="toMenu">
+<script>
+    document.getElementById("toMenu").addEventListener("click",function()
+    {
+        document.getElementById("comeback").scrollIntoView();
+    })
+</script>
+<h3>Van's birthday</h3>
+<h5>Vẽ tặng nhỏ bạn ngồi kế bên</h5>
+<section>
+    <img src="van01.jpg" alt="Ảnh con zân">
+    <img src="van02.jpg" alt="Ảnh con zân">
+    <img src="van03.jpg" alt="Ảnh con zân">
+    <img src="van04.jpg" alt="Ảnh con zân">
+    <img src="van05.jpg" alt="Ảnh con zân">
+    <img src="van06.jpg" alt="Ảnh con zân">
+</section>
+</body>
+</html>

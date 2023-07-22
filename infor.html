@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="infor.js"></script>
+    <link href="infor.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="comeback">
+        <ul class="mainMenu">
+            <li><a href="aboutWeb.html">Giới thiệu</a></li>
+            <li><a href="infor.html">Đăng ký</a></li>
+            <li class="dropMenu">
+                <a href="#">Dịch vụ</a>
+                <ul class="subMenu">
+                    <li><a href = "#">Sức khỏe</a></li>
+                    <li><a href = "#">Làm đẹp</a></li>
+                    <li><a href = "#">Thức ăn</a></li>
+                </ul>
+            </li>
+            <li class="dropMenu"><a href="photo.html">Photos</a>
+                <ul class="subMenu">
+                    <li ><a href="photo.html">Cat</li>
+                    <li><a href="photo.html">Dog</a></li>
+                    <li><a href="photo.html">Others</a></li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Pet home</h2>
+    </nav>
+
+    <img src="upTo.png" class="buttonMode" id= "toMenu">
+    <script>
+                // JavaScript code goes here
+            document.getElementById("toMenu").addEventListener("click", function() {
+            document.getElementById("comeback").scrollIntoView();
+        });
+    </script>
+    <h1>ĐĂNG KÝ THÔNG TIN KHÁCH HÀNG</h1>
+    <h4 class = "haha">Cảm ơn bạn đã dành thời gian cho dịch vụ của chúng tôi</h4>
+    <form id="formBefore" >
+        <ul>
+            <li>
+                <h4>Nhập tên của bạn:</h4>
+                <input type="text" id="yourName" required >
+            </li>
+            <li>
+                <h4>Email:</h4>
+                <input type="email" name="email" id="email">
+            </li>
+            <li>
+                <h4>Giới tính của bạn:</h4>
+                <label class ="gen-label">
+                    <input type="radio" name = "gen" id = "male" value = "male" required> Nam
+                </label>
+               <label class = "gen-label">
+                <input type = "radio" name = "gen" id = "female" value = "female" required> Nữ
+               </label>
+               <label class="gen-label">
+                <input type = "radio" name="gen" id="other" value="other" required> Khác
+               </label>
+            </li>
+            <li class="whatAnimal" id = "whatAnimal">
+                <h4>Bạn đang nuôi thú cưng nào?</h4>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="dog" id="dog" value="dog"> Bé Cún
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="cat" id="cat" value="cat"> Bé Méo
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="hamster" id="hamster" value="hamster"> Bé hamster
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="bird" id="bird" value="bird"> Chim
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="animal" id="animal" value="animal"> Khác
+                </label>
+            </li>
+            <li>
+                <h4>Nhập tên thú cưng của bạn:</h4>
+                <input type="text" id="PetName" required>
+            </li>
+            <li>
+                <h4>Hãy nói sơ qua thú cưng của bạn (đặc điểm, thói quen,...)</h4>
+                <textarea rows="5" cols="50" name="discriptions" id="discriptions" placeholder="Điền thông tin về thú cưng..."></textarea>
+            </li>
+        </ul>
+        <button onclick="information(event)">Xuất thông tin của bạn</button>
+    </form>
+    <div id="divOutput">
+        <h3>Thông tin vừa đăng ký</h3>
+        <p id="output1"></p>
+    </div>
+</body>
+</html>

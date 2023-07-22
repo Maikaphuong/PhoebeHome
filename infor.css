@@ -1,0 +1,207 @@
+body
+{
+    background-image: url("https://wallpapercave.com/dwp2x/wp4892342.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+h1,.haha
+{
+    text-align: center;
+    color:white;
+    font-family:Tahoma, sans-serif;
+}
+h4
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(255, 254, 188);
+    font-size: 20px;
+}
+h3
+{
+    text-align: center;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+form{
+    display:block;
+    margin:auto;
+    margin-top:50px;
+    background-color:rgba(51, 17, 72,0.6);
+    max-width:50%;
+    padding:20px;
+    color:white;
+    border-radius:10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+}
+li
+{
+    list-style-type: none;
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+}
+textarea
+{
+    background-color:rgba(3, 7, 26, 0.6);
+    color:bisque;
+    padding:10px;
+    font-size:18px;
+}
+
+#email, #PetName,#yourName
+{
+    background-color:rgba(3, 7, 26, 0.6);
+    border-style:none;
+    height:35px;
+    border-radius:10px;
+    color:white;
+    font-size:18px;
+}
+.checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+    padding:10px;
+    font-size:18px;
+
+}
+.gen-label
+{
+    padding:10px;
+    font-size:18px;
+}
+button
+{
+    border:2px solid white;
+    border-radius:10px;
+    background-color:rgb(41, 139, 108);
+    height:50px;
+    color:aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    display:block;
+    margin:auto;
+    font-size: 20px;
+}
+button:hover
+{
+    background-color:rgb(22, 79, 61);
+}
+/*-----------------------------FORM----------------------------------------------------------------------------------*/
+nav
+{
+    background-color:rgb(80, 23, 35);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:10px;
+    margin:0px;
+    height:70px;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0px;
+    margin:0px;
+}
+h2
+{
+    color:rgb(255, 208, 127);
+    text-decoration-line: overline;
+    font-size:30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.mainMenu
+{
+    display:flex;
+    flex-direction: row;
+    margin:0px;
+    padding:0px;
+    position:relative;
+}
+.mainMenu>li
+{
+    padding:0px;
+    background-color:rgb(111, 33, 60);
+}
+.mainMenu>li>a:hover
+{
+    background-color:rgb(193, 78, 127);
+}
+.mainMenu>li>a:hover{
+    color:bisque;
+}
+.mainMenu>li>a
+{
+    padding:23px;
+}
+.subMenu
+{
+    display:none;
+    position:absolute;
+    background-color:rgb(111, 33, 60);
+    margin-top:69px;
+    padding:0px;
+    width:170px;
+    height:140px;
+    border-top:2px solid white;
+}
+.dropMenu:hover .subMenu
+{
+    display:block;
+}
+.subMenu>ul
+{
+    padding:0px;
+}
+.subMenu>li
+{
+    padding:12px 10px;
+}
+.subMenu>li:hover
+{
+    background-color:rgb(193, 78, 127);
+}
+/*==================MENU=================================*/
+div
+{
+    padding:10px;
+    display:none;
+    margin:auto;
+    max-width:500px;
+    height:250px;
+    background-color:rgb(14, 48, 37,0.7);
+    border:2px solid white;
+    border-radius:5px;
+    color:white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p
+{
+    margin:30px;
+}
+.buttonMode
+{
+    position:fixed;
+    height:24px;
+    width:24px;
+    right:10px;
+    bottom:10px;
+    border:2px solid white;
+    border-radius:10px;
+    cursor:pointer;
+}

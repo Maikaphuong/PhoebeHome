@@ -1,0 +1,132 @@
+body
+{
+    background-image: url("03.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'Victor Mono', monospace,Tahoma;;
+    color:rgb(203, 100, 37);
+    font-size:18px;
+}
+body.dark{
+    background:#111;
+    color:bisque;
+}
+.buttonMode:hover{
+    cursor:pointer;
+    background-color:rgb(53, 30, 5,0.7);
+}
+.buttonMode
+{
+    border-radius: 100%;
+    padding:2px;
+    max-width:5%;
+    right: 10px;
+    position: absolute;/*ve ben phai*/
+    background-color: rgb(255, 170, 139);
+    cursor:pointer;
+    user-select:auto;
+}
+.Myimg
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 50%;
+}
+nav
+{
+    background-color: rgb(17, 62, 46);
+    padding:10px 0px 10px 0px;
+    margin:0px;
+}
+li
+{
+    list-style-type: none;
+    padding:0px;
+}
+a{
+    color:aliceblue;
+    text-decoration-line: none;
+}
+.mainMenu
+{
+    position:relative;
+    display:flex;
+    justify-content: left;
+    padding:0px;
+    margin:0px;
+}
+.mainMenu>li>a
+{
+    padding:10px 25px;
+}
+.mainMenu>li>a:hover
+{
+    background-color: rgb(37, 120, 91); 
+}
+.subMenu
+{
+    display:none;
+    position:absolute;
+    background-color: rgb(17, 62, 46);
+    padding:0px;
+    width:150px;
+    margin-top:10px;
+    border-top: 2px solid rgb(229, 128, 88);
+}
+.subMenu>li
+{
+    padding:10px;
+}
+.dropMenu:hover .subMenu
+{
+    display:block;
+}
+#change1:hover
+{
+    background-color: rgb(37, 120, 91); 
+}
+#aboutWeb
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img[class=buttonTo]
+{
+    width:24px;
+    height:24px;
+    border-radius:10px;
+    border:2px solid white;
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+}
+/*========================*/
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div
+{
+    background-color:rgb(48, 13, 13,0.8);
+    margin:20px;
+    border-radius:10px;
+    max-width:70%;
+    width:800px;
+    color:rgb(255, 255, 255);
+    padding:10px;
+}
+h3
+{
+    color:bisque;
+}
+h1,h4
+{
+   font-family: 'Monda','Victor Mono', monospace, Tahoma;
+}

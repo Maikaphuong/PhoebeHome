@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phobe Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monda:wght@700&family=Victor+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <style>
+        h3{
+            color:rgb(203, 100, 37);
+            text-align: center;
+        }
+        .listWeb
+        {
+            margin:auto;
+            max-width:500px;
+        }
+        .listWeb>li
+        {
+            background-color: rgb(4, 35, 25,0.9);
+            padding:10px;
+            padding-left:40px;
+            margin:20px;
+            border-radius: 10px;
+        }
+        .listWeb>li:hover
+        {
+            background-color: rgba(10, 82, 59, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="mainMenu">
+            <li><a href="index.html">Giới thiệu</a>
+            </li>
+            <li class="dropMenu"><a href="#">Projects</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="website.html">Website</a></li>
+                    <li id="change1"><a href="#">C++</a></li>
+                    <li id="change1"><a href="#">Python</a></li>
+                </ul>
+            </li>
+            <li class="dropMenu"><a href="#">Khác</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="birthday.html">Birthday</a></li>
+                    <li id="change1"><a href="art.html">Arts</a></li>
+                    <li id="change1"><a href="#">Noname</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+        <img src="sun.png" alt="light-Mode"class="buttonMode" id="light-dark"
+         onclick="changeImage()">
+    <script src="home.js"></script>
+    <h3>Danh sách các bài tập và dự án về web</h3>
+    <ul class = "listWeb">
+        <li>
+            <a href="winx.html">Trang báo (ngày viết 5/7/2023)</a>
+        </li>
+        <li>
+            <a href="aboutWeb.html">Pet Home (ngày viết 14/7/2023)</a>
+        </li>
+        <li>
+            <a href = "#">No name</a>
+        </li>
+        <li>
+            <a href = "#">No name</a>
+        </li>
+    </ul>
+</body>
+</html>

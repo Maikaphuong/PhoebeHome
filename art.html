@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phobe Home</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        h3,h4{
+            font-family:'Courier New', Courier, monospace;
+            color:rgb(203, 100, 37);
+            text-align: center;
+        }
+        .listWeb
+        {
+            margin:auto;
+            max-width:500px;
+            font-family:'Courier New', Courier, monospace;
+        }
+        .listWeb>li
+        {
+            background-color: rgb(4, 35, 25,0.9);
+            padding:10px;
+            padding-left:40px;
+            margin:20px;
+            border-radius: 10px;
+        }
+        .listWeb>li:hover
+        {
+            background-color: rgba(10, 82, 59, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="mainMenu">
+            <li><a href="index.html">Giới thiệu</a>
+            </li>
+            <li class="dropMenu"><a href="#">Projects</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="website.html">Website</a></li>
+                    <li id="change1"><a href="#">C++</a></li>
+                    <li id="change1"><a href="#">Python</a></li>
+                </ul>
+            </li>
+            <li class="dropMenu"><a href="#">Khác</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="birthday.html">Birthday</a></li>
+                    <li id="change1"><a href="art.html">Arts</a></li>
+                    <li id="change1"><a href="#">Noname</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <img src="sun.png" alt="light-Mode"class="buttonMode" id="light-dark"
+    onclick="changeImage()">
+<script src="home.js"></script>
+<h3>My Art</h3>
+<h4>Nơi tổng hợp về tranh zẽ zời giải xì trét lúc rãnh... </h4>
+<ul class = "listWeb">
+    <li>
+        <a href="artLe01.html">Art lẻ ngày 23/07/2023</a>
+    </li>
+    <li>
+        <a href="#">No name</a>
+    </li>
+    <li>
+        <a href = "#">No name</a>
+    </li>
+    <li>
+        <a href = "#">No name</a>
+    </li>
+</ul>
+</body>
+</html>

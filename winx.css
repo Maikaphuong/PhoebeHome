@@ -1,0 +1,116 @@
+header
+{
+    margin-top:45px;
+    background-image: url("https://i.pinimg.com/564x/09/cd/37/09cd3751f9e59f3bc82b982059e7b1c8.jpg");
+    margin-bottom:5px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    color:black;
+    font-family:Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px white;
+}
+nav
+{
+    background-color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:10px 0px 10px 0px;
+    /*------chinh giu nguyen*/
+    position:fixed;
+    width:100%;
+    top:0px;
+}
+a
+{
+    text-decoration-line: none;
+    color:antiquewhite;
+}
+li{
+    list-style-type: none;
+}
+.mainMenu
+{
+    display:flex;
+    justify-content:flex-start;
+    padding:0px;
+    margin:0px;
+    position:relative;
+}
+.drop-subMenu:hover .subMenu
+{
+    display:block;
+}
+.subMenu
+{
+    display:none;
+    border-top: 1px solid red;
+    position:absolute;
+    background-color: black;
+    margin-top:10px;
+    padding:0px;
+}
+.subMenu>li
+{
+    padding-left:2px;
+    padding-right:80px;
+    height:30px;
+}
+.subMenu>li>a
+{
+    padding:10px 0px;
+}
+#change1:hover
+{
+    background-color:rgb(51, 56, 52);
+}
+.mainMenu>li>a
+{
+    padding:10px 25px 10px;
+}
+.mainMenu>li>a:hover
+{
+    background-color: rgb(51, 56, 52);
+}
+/*----------------MENU- HEADER------------------*/
+.images>img
+{
+    border-radius: 10px;
+    width:100px;
+    height:100px;
+}
+.learnWeb
+{
+    background-color:rgb(97, 53, 44);
+    width:100%;
+    height:100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    text-align: center;
+    padding-top:50px;
+    border-radius: 10px;
+}
+section{
+    background-color: rgb(222, 222, 210);
+    margin-top:5px;
+    padding:10px;
+    border-radius:10px;
+}
+.contentBig
+{
+    display:flex;
+}
+.contentLeft
+{
+    width:40%;
+}
+.contentRight .info-list>li
+{
+    display:flex;
+    list-style-type: none;
+    border-bottom: 1px dotted brown;
+    padding: 5px 5px;
+}
+.contentRight .info-list>li .images
+{
+    width:25%;
+}

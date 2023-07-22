@@ -1,0 +1,127 @@
+body
+{
+    background-image: url("https://wallpapercave.com/dwp2x/wp8042123.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+nav
+{
+    background-color:rgb(23, 47, 80);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:10px;
+    margin:0px;
+    height:70px;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0px;
+    margin:0px;
+}
+h2
+{
+    color:rgb(255, 208, 127);
+    text-decoration-line: overline;
+    font-size:30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.mainMenu
+{
+    display:flex;
+    flex-direction: row;
+    margin:0px;
+    padding:0px;
+    position:relative;
+}
+ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+}
+li
+{
+    list-style-type: none;
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+}
+.mainMenu>li
+{
+    padding:0px;
+    background-color:rgb(34, 85, 115);
+}
+.mainMenu>li>a:hover
+{
+    background-color:rgb(91, 188, 198);
+}
+.mainMenu>li>a:hover{
+    color:rgb(34, 84, 104);
+}
+.mainMenu>li>a
+{
+    padding:23px;
+}
+.subMenu
+{
+    display:none;
+    position:absolute;
+    background-color:rgb(34, 85, 115);
+    margin-top:69px;
+    padding:0px;
+    width:170px;
+    height:140px;
+    border-top:2px solid white;
+}
+.dropMenu:hover .subMenu
+{
+    display:block;
+}
+.subMenu>ul
+{
+    padding:0px;
+}
+.subMenu>li
+{
+    padding:12px 10px;
+}
+.subMenu>li:hover
+{
+    background-color:rgb(91, 188, 198);
+}
+/*----------------------------------------------------------------------*/
+h3{
+    color:antiquewhite;
+    font-size:30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img
+{
+    height:200px;
+    width:200px;
+    border:2px solid white;
+    border-radius:10px;
+    margin:30px;
+}
+#Cat>div
+{
+    margin:auto;
+}
+.buttonMode
+{
+    position:fixed;
+    width:24px;
+    height:24px;
+    right: 10px;
+    bottom:10px;
+    cursor:pointer;
+}
+
