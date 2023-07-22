@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phobe Home</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monda:wght@700&family=Victor+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="comeback">
+        <ul class="mainMenu">
+            <li><a href="index.html">Giới thiệu</a>
+            </li>
+            <li class="dropMenu"><a href="#">Projects</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="website.html">Website</a></li>
+                    <li id="change1"><a href="#">C++</a></li>
+                    <li id="change1"><a href="#">Python</a></li>
+                </ul>
+            </li>
+            <li class="dropMenu"><a href="#">Khác</a>
+                <ul class="subMenu">
+                    <li id="change1"><a href="birthday.html">Birthday</a></li>
+                    <li id="change1"><a href="art.html">Arts</a></li>
+                    <li id="change1"><a href="#">Noname</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+        <img src="sun.png" alt="light-Mode"class="buttonMode" id="light-dark"
+         onclick="changeImage()">
+    <script src="home.js"></script>
+    <img src="upTo.png" class="buttonTo" id="toMenu">
+    <script>
+        document.getElementById("toMenu").addEventListener("click",function()
+        {
+            document.getElementById("comeback").scrollIntoView();
+        })
+    </script>
+    <section id="aboutWeb">
+        <h1>Phoebe Home</h1> 
+        <h4>Cảm ơn mọi người đã ghé thăm cái web phèn chuối này</h4>             
+        <div class="infoWeb">
+            <h3>Thông tin về website</h3>
+            <p>
+                Nơi tổng hợp các bài tập, dự án về môn học, tác phẩm của bản thân. Đương nhiên, mọi người có thể trải nghiệm và thưởng thức thành phẩm của cá nhân chủ web. 
+            </p>
+            <p>    
+                Tuy không quá nhiều đặc sắc, nhưng website này sẽ cải thiện theo thời gian nên nếu có nhiều sai sót mong mọi người thông cảm.
+            </p>
+        </div>
+        <div class = "whyWeb">
+            <h3>Tại sao lại có website này?</h3>
+            <p>
+               Đó là một ngày trời đẹp, mới học web nên hí ha hí hửng muốn làm một cái của riêng mình. Giao diện hơi phèn, nhưng không sao chủ web sẽ cố gắn nâng cấp nếu level lên.
+            </p>  
+            <p>
+                Tên website là do chủ thớt đang ngủ mớ cái đặt đại nên đừng hỏi tại sao tên vậy vì cũng hên xui lắm. Có khi mốt đổi ý đổi luôn hết tên và giao diện web không chừng.
+            </p>
+            <p>
+                Đặc biệt ngày ra đời của web này là ngày 10/7/2023.
+            </p>
+        </div>
+        <div>
+            <h3>Web có thành viên nào không ?</h3>
+            <p>
+                Câu trả lời là không! Công ty tnhh cá nhân 1 mình chủ web đã quá đủ cho cái web phèn chuối này. Thêm thành viên nữa chắc cái web này biến thành mớ hỗn độn mất.
+            </p>
+        </div>
+        <div>
+            <h3>Lời nhắn nhủ của chủ web</h3>
+            <p>
+                Vui vẻ không quạo, web phèn thiệt nên mọi người cứ ha ha ha đi. Nhưng hãy trải nghiệm các tác vụ trong web để thưởng thức vài sản phẩm của cá nhân chủ web.
+            </p>
+            <p>
+                Có một vài thanh tác vụ sẽ không hoạt động được vì hiện tại chưa có sản phẩm gì để update.
+            </p>
+        </div>
+    </section>
+</body>
+</html>
